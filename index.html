@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>North Star Bakery</title>
+</head>
+<body>
+    <header>
+        <nav aria-label="Primary">
+            <a href="index.html" class="logo">
+                <img src="images/bakery-logo_c.png" alt="North Star Bakery Home" width="100" height="100">
+            </a>
+            <ul>
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section" aria-labelledby="hero-heading">
+            <img src="images/bakery-storefront_c.png" alt="North Star Bakery storefront with fresh bread and pastries on display" width="1200" height="800">
+            <p class="eyebrow">Your Neighborhood Bakehouse</p>
+            <h1 id="hero-heading">Freshly Baked, Daily in the Neighborhood</h1>
+            <p>Slow-fermented loaves, butter-rich pastries, and cakes for the moments worth gathering around.</p>
+            <div>
+                <a href="products.html" class="button">See today's bakes</a>
+                <a href="contact.html" class="button">Plan a pickup</a>
+            </div>
+        </section>
+
+ <section class="known-for-section" aria-labelledby="known-for-heading">
+    <p class="eyebrow">The Good Stuff</p>
+    <h2 id="known-for-heading" class="section-title">What We're Known For</h2>
+    <p>A small daily menu, made with care and the best ingredients we can find.</p>
+
+    <div class="cards">
+        <article class="card">
+            <p aria-hidden="true">01</p>
+            <h3>Sourdough Breads</h3>
+            <p>Naturally leavened and patiently fermented for a crackling crust and deep flavor.</p>
+            <a href="products.html">Explore Bakes</a>
+        </article>
+
+        <article class="card">
+            <p aria-hidden="true">02</p>
+            <h3>Flaky Pastries</h3>
+            <p>Hand-laminated each morning with cultured butter and seasonal fillings.</p>
+            <a href="products.html">Explore Bakes</a>
+        </article>
+
+        <article class="card">
+            <p aria-hidden="true">03</p>
+            <h3>Custom Cakes</h3>
+            <p>Thoughtful celebration cakes designed around your gathering and your people.</p>
+            <a href="products.html">Explore Bakes</a>
+        </article>
+    </div>
+</section>
+
+
+<section class="signature-section" aria-labelledby="signature-product">
+    <div class="signature-image">
+        <img src="images/bakery-signature-loaf_c.png" alt="Crusty sourdough country loaf sliced open on a wooden board" width="800" height="600">
+    </div>
+
+    <div class="signature-content">
+        <p class="eyebrow">The House Favorite</p>
+        <h2 id="signature-product" class="section-title">Signature Country Loaf</h2>
+        <p>Flour, water, sea salt, and time. Our country loaf rests for 36 hours before meeting the oven, developing its tangy crumb and burnished crust.</p>
+
+        <dl class="product-specs">
+            <div class="spec-item">
+                <dt>Fermentation</dt>
+                <dd>36 hours</dd>
+            </div>
+            <div class="spec-item">
+                <dt>Price</dt>
+                <dd>$9 each</dd>
+            </div>
+        </dl>
+
+        <div>
+            <a href="contact.html" class="button">Reserve a loaf</a>
+        </div>
+    </div>
+</section>
+
+<section class="bakery-wishlist-section" aria-labelledby="bakery-wishlist">
+    <p class="eyebrow">Save It For Later</p>
+    <h2 id="bakery-wishlist" class="section-title">Build Your Bakery Wishlist</h2>
+    <p>Tap the star on anything that catches your eye. Your favorites will be waiting when you return.</p>
+
+    <button type="button" class="wishlist-summary" aria-live="polite">
+    <span aria-hidden="true">&#9733;</span>
+    <span class="wishlist-count">0</span>
+    <span>saved favorites</span>
+</button>
+
+    <div class="list">
+        <article class="list-item">
+            <img src="images/country-sourdough.jpeg" alt="Round loaf of crusty country sourdough" width="400" height="300">
+            <p class="category">Artisan Breads</p>
+            <h3>Country Sourdough</h3>
+            <p class="price">$9</p>
+            <button type="button" class="favorite-btn" aria-pressed="false" aria-label="Save Country Sourdough to wishlist">
+                &#9734;
+            </button>
+        </article>
+
+        <article class="list-item">
+            <img src="images/seeded-rye.jpeg" alt="Dark rye loaf coated in toasted sesame and caraway seeds" width="400" height="300">
+            <p class="category">Artisan Breads</p>
+            <h3>Seeded Rye</h3>
+            <p class="price">$10</p>
+            <button type="button" class="favorite-btn" aria-pressed="false" aria-label="Save Seeded Rye to wishlist">
+                &#9734;
+            </button>
+        </article>
+
+        <article class="list-item">
+            <img src="images/butter-croissant.jpeg" alt="Golden flaky butter croissant with visible honeycomb layers" width="400" height="300">
+            <p class="category">Pastries &amp; Viennoiserie</p>
+            <h3>Butter Croissant</h3>
+            <p class="price">$5</p>
+            <button type="button" class="favorite-btn" aria-pressed="false" aria-label="Save Butter Croissant to wishlist">
+                &#9734;
+            </button>
+        </article>
+
+        <article class="list-item">
+            <img src="images/citrus-morning-bun.jpeg" alt="Swirled laminated morning bun dusted with citrus sugar" width="400" height="300">
+            <p class="category">Pastries &amp; Viennoiserie</p>
+            <h3>Citrus Morning Bun</h3>
+            <p class="price">$6</p>
+            <button type="button" class="favorite-btn" aria-pressed="false" aria-label="Save Citrus Morning Bun to wishlist">
+                &#9734;
+            </button>
+        </article>
+    </div>
+
+    <a href="products.html">Browse all daily bakes</a>
+</section>
+
+<section class="baker-welcome" aria-labelledby="head-baker-welcome">
+    <div class="head-baker-image">
+        <img src="images/head-baker.jpeg" alt="Head baker Mara at the bakery counter surrounded by baked loaves and shaped dough" width="800" height="600">
+    </div>
+
+    <div class="baker-welcome-content">
+        <p class="eyebrow">From Our Kitchen</p>
+        <h2 id="head-baker-welcome" class="section-title">A Little Welcome From Mara</h2>
+        <p>Hear our head baker share why slow bread, local ingredients, and a familiar counter matter to us.</p>
+
+        <audio controls src="audio/bakery-welcome.mp3">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    <details class="transcript">
+    <summary>Read the audio transcript</summary>
+   <p>Here at North Star Bakery, every loaf starts before sunrise. We use simple ingredients, local grains, and time because good bread can’t be rushed. Stop by and taste the difference, or place a pre-order and we’ll have something fresh waiting for you.</p>
+</details>
+</section>
+
+    </main>
+
+    <footer class="site-footer">
+    <div class="footer-brand">
+        <span class="footer-icon" aria-hidden="true">&#9733;</span>
+        <div>
+            <p class="footer-title">North Star Bakery</p>
+            <p class="footer-tagline">Made by hand. Shared with neighbors.</p>
+        </div>
+    </div>
+
+    <div class="footer-details">
+        <div class="footer-info">
+            <p class="eyebrow">Today's Hours</p>
+            <p><time datetime="06:00">6 AM</time> &mdash; <time datetime="16:00">4 PM</time></p>
+        </div>
+
+        <div class="footer-info">
+            <p class="eyebrow">Find Us</p>
+            <address>128 North Maple Street</address>
+        </div>
+
+        <a href="contact.html" class="footer-cta">Start a pre-order <span aria-hidden="true">&rarr;</span></a>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2025 North Star Bakery. Baked fresh in the neighborhood.</p>
+    </div>
+</footer>
+</body>
+</html>
