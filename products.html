@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | North Star Bakery</title>
+</head>
+
+<body>
+    <header class="site-header">
+        <a href="index.html" class="brand">
+            <img src="images/bakery-logo_c.png" alt="North Star Bakery logo" width="40" height="40">
+            <span>North Star Bakery</span>
+        </a>
+
+        <nav aria-label="Primary">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html" aria-current="page">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="products-hero" aria-labelledby="products-heading">
+            <p class="eyebrow">From The Oven</p>
+            <h1 id="products-heading">Our Daily Bakes &amp; Offerings</h1>
+            <p>Our counter changes with the seasons and our bakers' curiosity. Here's a taste of what you'll find today.
+            </p>
+        </section>
+
+        <section class="products-catalog" aria-labelledby="catalog-heading">
+            <h2 id="catalog-heading" class="visually-hidden">Browse Daily Bakes</h2>
+
+            <div class="filter-bar" role="group" aria-label="Filter bakes by category">
+                <button type="button" class="filter-btn" aria-pressed="true">All Bakes</button>
+                <button type="button" class="filter-btn" aria-pressed="false">Artisan Breads</button>
+                <button type="button" class="filter-btn" aria-pressed="false">Pastries &amp; Viennoiserie</button>
+                <button type="button" class="filter-btn" aria-pressed="false">Cakes &amp; Special Orders</button>
+            </div>
+
+            <div class="product-grid">
+                <article class="product-card" data-category="artisan-breads">
+                    <img src="images/country-sourdough.jpeg" alt="Round loaf of crusty country sourdough" width="1024"
+                        height="1024">
+                    <p class="category">Artisan Breads</p>
+                    <div class="product-title-row">
+                        <h3>Country Sourdough</h3>
+                        <p class="price">$9</p>
+                    </div>
+                    <p>Deep caramel crust, open crumb, and our 12-year starter.</p>
+                    <button type="button" class="favorite-btn" aria-pressed="false">
+                        <span aria-hidden="true">&#9734;</span> Save item
+                    </button>
+                </article>
+
+                <article class="product-card" data-category="artisan-breads">
+                    <img src="images/seeded-rye.jpeg"
+                        alt="Dark loaf of seeded rye bread topped with sesame, sunflower, and caraway seeds"
+                        width="1024" height="1024">
+                    <p class="category">Artisan Breads</p>
+                    <div class="product-title-row">
+                        <h3>Seeded Rye</h3>
+                        <p class="price">$10</p>
+                    </div>
+                    <p>Stone-ground rye, sunflower, flax, and toasted caraway.</p>
+                    <button type="button" class="favorite-btn" aria-pressed="false">
+                        <span aria-hidden="true">&#9734;</span> Save item
+                    </button>
+                </article>
+
+                <article class="product-card" data-category="pastries-viennoiserie">
+                    <img src="images/butter-croissant.jpeg" alt="Golden flaky French butter croissant" width="1024"
+                        height="1024">
+                    <p class="category">Pastries &amp; Viennoiserie</p>
+                    <div class="product-title-row">
+                        <h3>Butter Croissant</h3>
+                        <p class="price">$5</p>
+                    </div>
+                    <p>Three-day lamination with cultured local butter.</p>
+                    <button type="button" class="favorite-btn" aria-pressed="false">
+                        <span aria-hidden="true">&#9734;</span> Save item
+                    </button>
+                </article>
+
+                <article class="product-card" data-category="pastries-viennoiserie">
+                    <img src="images/citrus-morning-bun.jpeg"
+                        alt="Swirled citrus morning bun dusted with orange zest sugar" width="1024" height="1024">
+                    <p class="category">Pastries &amp; Viennoiserie</p>
+                    <div class="product-title-row">
+                        <h3>Citrus Morning Bun</h3>
+                        <p class="price">$6</p>
+                    </div>
+                    <p>Flaky pastry dough rolled with cardamom and candied orange peel.</p>
+                    <button type="button" class="favorite-btn" aria-pressed="false">
+                        <span aria-hidden="true">&#9734;</span> Save item
+                    </button>
+                </article>
+
+                <article class="product-card" data-category="artisan-breads">
+                    <img src="images/bakery-signature-loaf_c.png"
+                        alt="North Star Bakery signature loaf with a deeply caramelized crust" width="1024"
+                        height="1024">
+                    <p class="category">Artisan Breads</p>
+                    <div class="product-title-row">
+                        <h3>Signature Loaf</h3>
+                        <p class="price">$11</p>
+                    </div>
+                    <p>Our house slow-fermented loaf crafted for rich flavor and a tender interior.</p>
+                    <button type="button" class="favorite-btn" aria-pressed="false">
+                        <span aria-hidden="true">&#9734;</span> Save item
+                    </button>
+                </article>
+
+                <article class="product-card" data-category="cakes-special-orders">
+                    <img src="images/brown-butter-honey-cake.jpeg"
+                        alt="Brown butter honey cake with toasted almond crumb on a ceramic stand" width="1024"
+                        height="1024">
+                    <p class="category">Cakes &amp; Special Orders</p>
+                    <div class="product-title-row">
+                        <h3>Brown Butter Honey Cake</h3>
+                        <p class="price">$36</p>
+                    </div>
+                    <p>Tender crumb rich with wildflower honey, browned butter, and toasted almonds.</p>
+                    <button type="button" class="favorite-btn" aria-pressed="false">
+                        <span aria-hidden="true">&#9734;</span> Save item
+                    </button>
+                </article>
+
+                <article class="product-card" data-category="cakes-special-orders">
+                    <img src="images/spiced-molasses-cookies.jpeg"
+                        alt="Dark molasses and ginger cookies stacked on a wooden bakery counter" width="1024"
+                        height="1024">
+                    <p class="category">Cakes &amp; Special Orders</p>
+                    <div class="product-title-row">
+                        <h3>Spiced Molasses Cookies</h3>
+                        <p class="price">$4</p>
+                    </div>
+                    <p>Chewy centers, crisp sugar edges, and warm notes of ginger, cinnamon, and clove.</p>
+                    <button type="button" class="favorite-btn" aria-pressed="false">
+                        <span aria-hidden="true">&#9734;</span> Save item
+                    </button>
+                </article>
+
+                <article class="product-card" data-category="cakes-special-orders">
+                    <img src="images/lemon-olive-oil-cake.jpeg"
+                        alt="Lemon olive oil cake with citrus glaze and candied lemon peel" width="1024" height="1024">
+                    <p class="category">Cakes &amp; Special Orders</p>
+                    <div class="product-title-row">
+                        <h3>Lemon Olive Oil Cake</h3>
+                        <p class="price">$34</p>
+                    </div>
+                    <p>Bright Meyer lemon zest and cold-pressed olive oil for a moist, fragrant slice.</p>
+                    <button type="button" class="favorite-btn" aria-pressed="false">
+                        <span aria-hidden="true">&#9734;</span> Save item
+                    </button>
+                </article>
+
+                <article class="product-card" data-category="cakes-special-orders">
+                    <img src="images/dark-chocolate-sea-salt-cookies.jpeg"
+                        alt="Chunky dark chocolate chip cookies topped with flaky sea salt" width="1024" height="1024">
+                    <p class="category">Cakes &amp; Special Orders</p>
+                    <div class="product-title-row">
+                        <h3>Dark Chocolate Sea Salt Cookies</h3>
+                        <p class="price">$5</p>
+                    </div>
+                    <p>Bittersweet chocolate chunks, brown sugar dough, and a pinch of flaky sea salt.</p>
+                    <button type="button" class="favorite-btn" aria-pressed="false">
+                        <span aria-hidden="true">&#9734;</span> Save item
+                    </button>
+                </article>
+
+                <article class="product-card" data-category="cakes-special-orders">
+                    <img src="images/cardamom-pistachio-tea-cake.jpeg"
+                        alt="Sliced cardamom and pistachio cake on a wooden board" width="1024" height="1024">
+                    <p class="category">Cakes &amp; Special Orders</p>
+                    <div class="product-title-row">
+                        <h3>Cardamom Pistachio Cake</h3>
+                        <p class="price">$32</p>
+                    </div>
+                    <p>Aromatic green cardamom batter folded with roasted pistachios for coffee or tea.</p>
+                    <button type="button" class="favorite-btn" aria-pressed="false">
+                        <span aria-hidden="true">&#9734;</span> Save item
+                    </button>
+                </article>
+            </div>
+        </section>
+
+        <section class="saved-favorites-bar" aria-labelledby="saved-favorites-heading">
+            <div class="saved-favorites-info">
+                <span class="star-badge" aria-hidden="true">&#9733;</span>
+                <div>
+                    <h2 id="saved-favorites-heading" aria-live="polite">Saved Favorites: <span
+                            class="wishlist-count">0</span> items</h2>
+                    <p>Your picks are saved for next time.</p>
+                </div>
+            </div>
+            <a href="contact.html" class="button">Request these items <span aria-hidden="true">&rarr;</span></a>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-brand">
+            <span class="footer-icon" aria-hidden="true">&#9733;</span>
+            <div>
+                <p class="footer-title">North Star Bakery</p>
+                <p class="footer-tagline">Made by hand. Shared with neighbors.</p>
+            </div>
+        </div>
+
+        <div class="footer-details">
+            <div class="footer-info">
+                <p class="eyebrow">Today's Hours</p>
+                <p><time datetime="06:00">6 AM</time> &mdash; <time datetime="16:00">4 PM</time></p>
+            </div>
+
+            <div class="footer-info">
+                <p class="eyebrow">Find Us</p>
+                <address>128 North Maple Street</address>
+            </div>
+
+            <a href="contact.html" class="footer-cta">Start a pre-order <span aria-hidden="true">&rarr;</span></a>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 North Star Bakery. Baked fresh in the neighborhood.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
