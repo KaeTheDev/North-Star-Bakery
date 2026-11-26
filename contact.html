@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | North Star Bakery</title>
+</head>
+
+<body>
+    <header class="site-header">
+        <a href="index.html" class="brand">
+            <img src="images/bakery-logo_c.png" alt="North Star Bakery logo" width="40" height="40">
+            <span>North Star Bakery</span>
+        </a>
+
+        <nav aria-label="Primary">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" aria-current="page">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-hero" aria-labelledby="contact-heading">
+            <p class="eyebrow">Come Say Hello</p>
+            <h1 id="contact-heading">Get in Touch &amp; <em>Pre-Order Requests</em></h1>
+            <p>Planning a breakfast meeting, a birthday, or simply Saturday morning? Tell us what would make it
+                delicious.</p>
+        </section>
+
+        <section class="contact-details" aria-labelledby="location-heading">
+            <div class="location-panel">
+                <h2 id="location-heading">We&rsquo;re right around the corner.</h2>
+
+                <figure class="map-figure">
+                    <img src="images/north_star_bakery_map.jpeg"
+                        alt="Neighborhood street map showing a pin for North Star Bakery at 128 North Maple Street"
+                        width="600" height="450">
+                    <figcaption>North Star Bakery at 128 North Maple Street in Brookside.</figcaption>
+                </figure>
+
+                <div class="location-info">
+                    <div class="detail-block">
+                        <p class="eyebrow">Address</p>
+                        <address>
+                            128 North Maple Street<br>
+                            Brookside
+                        </address>
+                    </div>
+
+                    <div class="detail-block">
+                        <p class="eyebrow">Pickup Window</p>
+                        <p>Tuesday&ndash;Sunday</p>
+                        <p><time datetime="06:00">6 AM</time> &mdash; <time datetime="16:00">4 PM</time></p>
+                    </div>
+
+                    <div class="detail-block">
+                        <p class="eyebrow">Phone</p>
+                        <p><a href="tel:+15550140286">(555) 014-0286</a></p>
+                    </div>
+                </div>
+
+                <a href="https://maps.google.com/?q=128+North+Maple+Street" target="_blank" rel="noopener noreferrer"
+                    class="map-link">
+                    Open in Google Maps <span aria-hidden="true">&rarr;</span>
+                </a>
+            </div>
+
+            <div class="request-panel">
+                <h2>Start a request</h2>
+                <p class="form-intro">We&rsquo;ll follow up within one business day to confirm availability and pickup
+                    details.</p>
+                <p class="restore-status" aria-live="polite"></p>
+
+                <form id="bakery-request-form" action="#" method="post" novalidate>
+                    <div class="form-field">
+                        <label for="full-name">Full Name</label>
+                        <input type="text" id="full-name" name="fullName" placeholder="Your full name"
+                            autocomplete="name" required>
+                        <p class="error-message" id="full-name-error" role="alert" aria-live="polite"></p>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="email-address">Email Address</label>
+                        <input type="email" id="email-address" name="email" placeholder="you@example.com"
+                            autocomplete="email" required>
+                        <p class="error-message" id="email-error" role="alert" aria-live="polite"></p>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="pickup-date">Pickup Date</label>
+                            <input type="date" id="pickup-date" name="pickupDate" required>
+                            <p class="error-message" id="pickup-date-error" role="alert" aria-live="polite"></p>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="request-type">Request Type</label>
+                            <select id="request-type" name="requestType">
+                                <option value="pre-order" selected>Pre-Order</option>
+                                <option value="special-order">Cake &amp; Special Order</option>
+                                <option value="general-question">General Question</option>
+                            </select>
+                            <p class="error-message" id="request-type-error" role="alert" aria-live="polite"></p>
+                        </div>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="item-details">Item Details</label>
+                        <textarea id="item-details" name="itemDetails" rows="4"
+                            placeholder="What would you like, and how many?" required></textarea>
+                        <p class="error-message" id="item-details-error" role="alert" aria-live="polite"></p>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="dietary-notes">Dietary / Allergy Notes</label>
+                        <input type="text" id="dietary-notes" name="dietaryNotes"
+                            placeholder="Share anything our bakers should know">
+                        <p class="error-message" id="dietary-notes-error" role="alert" aria-live="polite"></p>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        Submit Request <span aria-hidden="true">&rarr;</span>
+                    </button>
+
+                    <p class="form-confirmation" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-brand">
+            <span class="footer-icon" aria-hidden="true">&#9733;</span>
+            <div>
+                <p class="footer-title">North Star Bakery</p>
+                <p class="footer-tagline">Made by hand. Shared with neighbors.</p>
+            </div>
+        </div>
+
+        <div class="footer-details">
+            <div class="footer-info">
+                <p class="eyebrow">Today's Hours</p>
+                <p><time datetime="06:00">6 AM</time> &mdash; <time datetime="16:00">4 PM</time></p>
+            </div>
+
+            <div class="footer-info">
+                <p class="eyebrow">Find Us</p>
+                <address>128 North Maple Street</address>
+            </div>
+
+            <a href="contact.html" class="footer-cta">Start a pre-order <span aria-hidden="true">&rarr;</span></a>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 North Star Bakery. Baked fresh in the neighborhood.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
