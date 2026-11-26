@@ -91,23 +91,26 @@
                         <p class="error-message" id="email-error" role="alert" aria-live="polite"></p>
                     </div>
 
-                    <div class="form-row">
-                        <div class="form-field">
-                            <label for="pickup-date">Pickup Date</label>
-                            <input type="date" id="pickup-date" name="pickupDate" required>
-                            <p class="error-message" id="pickup-date-error" role="alert" aria-live="polite"></p>
-                        </div>
+                    <fieldset class="form-group">
+                        <legend>Order &amp; Pickup Details</legend>
+                        <div class="form-row">
+                            <div class="form-field">
+                                <label for="pickup-date">Pickup Date</label>
+                                <input type="date" id="pickup-date" name="pickupDate" required>
+                                <p class="error-message" id="pickup-date-error" role="alert" aria-live="polite"></p>
+                            </div>
 
-                        <div class="form-field">
-                            <label for="request-type">Request Type</label>
-                            <select id="request-type" name="requestType">
-                                <option value="pre-order" selected>Pre-Order</option>
-                                <option value="special-order">Cake &amp; Special Order</option>
-                                <option value="general-question">General Question</option>
-                            </select>
-                            <p class="error-message" id="request-type-error" role="alert" aria-live="polite"></p>
+                            <div class="form-field">
+                                <label for="request-type">Request Type</label>
+                                <select id="request-type" name="requestType">
+                                    <option value="pre-order" selected>Pre-Order</option>
+                                    <option value="special-order">Cake &amp; Special Order</option>
+                                    <option value="general-question">General Question</option>
+                                </select>
+                                <p class="error-message" id="request-type-error" role="alert" aria-live="polite"></p>
+                            </div>
                         </div>
-                    </div>
+                    </fieldset>
 
                     <div class="form-field">
                         <label for="item-details">Item Details</label>
